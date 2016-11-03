@@ -4,4 +4,6 @@ apt-get remove -y libreoffice-* openoffice* unity-webapps-common gnome-calendar 
 apt autoremove -y
 apt-get update && apt-get dist-upgrade -y
 apt-get install -y open-vm-tools open-vm-tools-desktop openssh-server vim
+echo "Script complete - reboot in 15 seconds"
+sleep 15s
 reboot

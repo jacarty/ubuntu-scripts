@@ -6,4 +6,6 @@ apt-get update && apt-get dist-upgrade -y
 apt-get install -y open-vm-tools open-vm-tools-desktop openssh-server vim
 wget -qO- https://get.docker.com | sh
 usermod -aG docker $SUDO_USER
+echo "Script complete - reboot in 15 seconds"
+sleep 15s
 reboot
