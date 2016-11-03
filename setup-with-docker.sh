@@ -4,5 +4,5 @@ apt autoremove -y
 apt-get update && apt-get dist-upgrade -y
 apt-get install -y open-vm-tools open-vm-tools-desktop openssh-server vim
 wget -qO- https://get.docker.com | sh
-usermod -aG docker $USER
+usermod -aG docker $SUDO_USER
 reboot
